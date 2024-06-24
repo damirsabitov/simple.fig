@@ -486,6 +486,23 @@ body {
         display: flex;
     }
 
+    .menu {
+        display: none;
+        /* Изначально скрываем меню */
+        position: absolute;
+        background-color: #DDDDDD;
+        z-index: 999;
+        /* Чтобы меню было поверх других элементов */
+        max-width: 550px;
+        min-height: 516px;
+        width: 100%;
+    }
+
+    .menu__links {
+        display: flex;
+        flex-direction: column;
+    }
+
     .nav__start {
         justify-content: center;
         border-bottom: solid #DDDDDD 1px;
