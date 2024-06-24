@@ -30,7 +30,6 @@ body {
 /* * root */
 
 :root {
-    --header-height: 80px;
     --container-padding-inline: 15px;
     --container-max-width-medium: calc(1140px + (var(--container-padding-inline) * 2));
 }
@@ -120,7 +119,6 @@ body {
     max-width: 445px;
     padding-top: 130px;
     padding-bottom: 130px;
-    position: ;
 }
 
 .info__h1 {
@@ -151,7 +149,6 @@ body {
 
 .info__image {
     padding-top: 60px;
-    position: relative;
 }
 
 
