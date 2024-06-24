@@ -503,6 +503,10 @@ body {
         flex-direction: column;
     }
 
+    .meni__link {
+        font-size: 16px;
+    }
+
     .nav__start {
         justify-content: center;
         border-bottom: solid #DDDDDD 1px;
