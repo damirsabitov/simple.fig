@@ -18,10 +18,20 @@
     <header class="header header--fixed">
         <nav class="nav">
             <div class="container nav__container">
+
                 <div class="nav__start">
                     <a href="#" class="nav__logo--link"><img class="logo--link" src="img/logo.svg" alt="logo"></a>
+                    <div class="nav__start--poisk">
+                        <a class="nav__link" href="#">
+                            <li class="nav__li"><img src="img/search.svg" alt="poisk"></li>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <li class="nav__li"><img src="img/log_in.svg" alt="poisk"></li>
+                        </a>
+                    </div>
                 </div>
-                <div class="nav__end">
+
+                <div class="nav__center">
                     <ul class="nav__list">
                         <a class="nav__link" href="#">
                             <li class="nav__li">Продукция</li>
@@ -35,31 +45,42 @@
                         <a class="nav__link" href="#">
                             <li class="nav__li">Контакты</li>
                         </a>
+                    </ul>
+                </div>
+
+                <div class="nav__group1">
+                    <div class="nav__burger">
+                        <a href="" class="nav__burger--link"><img src="img/burger.svg" alt=""></a>
+                    </div>
+                    <div class="nav__end">
                         <a class="nav__link" href="#">
                             <li class="nav__li"><img src="img/search.svg" alt="poisk"></li>
                         </a>
                         <a class="nav__link" href="#">
                             <li class="nav__li"><img src="img/log_in.svg" alt="poisk"></li>
                         </a>
-                    </ul>
+                    </div>
                 </div>
+
             </div>
         </nav>
     </header>
 
     <main class="main">
         <section class="section section--hero">
-            <div class="container--hero container">
-                <div class="info__container">
-                    <h1 class="info__h1">Простые вещи.<br>Из бумаги</h1>
-                    <p class="info__p">Бума́га (предположительно от итал. bombagia, первоисточником же считается
+            <div class="section__container container" style="overflow: hidden;">
+                <div class="section__content">
+                    <h1 class="section__title">Простые вещи.<br>Из бумаги</h1>
+                    <p class="section__discription">Бума́га (предположительно от итал. bombagia, первоисточником же
+                        считается
                         иранский) — волокнистый
                         материал с минеральными добавками.</p>
-                    <button class="info__button">Каталог</button>
+                    <button class="section__button button">Каталог</button>
                 </div>
-
-                <div class="info__image">
-                    <img src="img/Layer 2 copy.svg" alt="bumaga">
+                <div class="section__media" style=" 
+                max-height: 550px;
+                ">
+                    <img class="section__media--large" src="img/Layer 2 copy.svg" alt="bumaga">
                 </div>
             </div>
         </section>
@@ -93,7 +114,7 @@
                 </div>
 
                 <div class="results__info">
-                    <img src="img/box.svg" alt="box">
+                    <div class="results__image"><img src="img/box.png" alt="box"></div>
                     <div class="result__info">
                         <h1 class="result__h1">Максимальная белизна</h1>
                         <p class="result__info--paragraph">Для повышения белизны, гладкости и мягкости в состав бумажной
@@ -123,7 +144,7 @@
                     </div>
 
                     <div class="catalog">
-                        <img src="img/katalog__2.svg" alt="catalog1">
+                        <img class="catalog__image" src="img/katalog__2.svg" alt="catalog1">
                         <h1 class="catalog__h1">Пакеты</h1>
                         <h2 class="catalog__h2">Тираж: от 200 штук</h2>
                         <p class="catalog__paragraph">С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
@@ -133,7 +154,7 @@
                     </div>
 
                     <div class="catalog">
-                        <img src="img/katalog__3.svg" alt="catalog1">
+                        <img class="catalog__image" src="img/katalog__3.svg" alt="catalog1">
                         <h1 class="catalog__h1">Кейсы</h1>
                         <h2 class="catalog__h2">Тираж: от 30 штук</h2>
                         <p class="catalog__paragraph">Подойдет для документов и других бумаг. Различные расцветки,
@@ -143,7 +164,7 @@
                     </div>
 
                     <div class="catalog">
-                        <img src="img/katalog__4.svg" alt="catalog1">
+                        <img class="catalog__image" src="img/katalog__4.svg" alt="catalog1">
                         <h1 class="catalog__h1">Другие изделия </h1>
                         <h2 class="catalog__h2">Тираж: от 100 штук</h2>
                         <p class="catalog__paragraph">Нестандартные упаковки, кейсы и другие изделия различных размеров
@@ -173,10 +194,11 @@
                         <p class="product__paragraph">80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и
                             для графики и для акварели.
                             Для самых смелых творческих замыслов!</p>
-                        <button class="info__button">Купить</button>
+                        <button class="section__button button">Купить</button>
                     </div>
                     <div class="product__image">
-                        <img src="img/pic.png" alt="pic">
+                        <img class="product__image--small" src="img/pic2.svg" alt="book">
+                        <img class="product__image--large" src="img/pic.png" alt="pic">
                     </div>
                 </div>
             </div>
