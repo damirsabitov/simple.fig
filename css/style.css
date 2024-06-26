@@ -492,6 +492,7 @@ body {
         position: absolute;
         background-color: #DDDDDD;
         z-index: 999;
+        padding: 15px;
         /* Чтобы меню было поверх других элементов */
         max-width: 550px;
         min-height: 516px;
@@ -501,10 +502,14 @@ body {
     .menu__links {
         display: flex;
         flex-direction: column;
+        padding-top: 22px;
+        gap: 50px;
     }
 
-    .meni__link {
+    .menu__link {
         font-size: 16px;
+        text-decoration: none;
+        color: #4C5866;
     }
 
     .nav__start {
@@ -515,6 +520,8 @@ body {
     .nav__group1 {
         display: flex;
         align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
         width: 100%;
         justify-content: space-between;
     }
