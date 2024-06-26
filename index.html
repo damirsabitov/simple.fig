@@ -12,7 +12,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -190,12 +189,18 @@
             </div>
         </section>
         <section class="section section--result">
-            <div class="container">
-                <div class="partners">
-                    <a href="#"><img src="img/hahne1.svg" alt="img"></a>
-                    <a href="#"><img src="img/canson2.svg" alt="img"></a>
-                    <a href="#"><img src="img/royal3.svg" alt="img"></a>
-                    <a href="#"><img src="img/fabr4.svg" alt="img"></a>
+            <div class="container swiper-container">
+                <div class="partners swiper-container">
+                    <div class="swiper-wrapper">
+                        <a class="partners__link swiper-slide" href="#"><img class="partners__image"
+                                src="img/hahne1.svg" alt="img"></a>
+                        <a class="partners__link swiper-slide" href="#"><img class="partners__image"
+                                src="img/canson2.svg" alt="img"></a>
+                        <a class="partners__link swiper-slide" href="#"><img class="partners__image"
+                                src="img/royal3.svg" alt="img"></a>
+                        <a class="partners__link swiper-slide" href="#"><img class="partners__image" src="img/fabr4.svg"
+                                alt="img"></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -238,6 +243,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

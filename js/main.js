@@ -8,3 +8,13 @@ burger.addEventListener('click', function() {
         menu.style.display = 'none'; // Скрываем меню при повторном клике
     }
 });
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
