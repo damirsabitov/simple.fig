@@ -497,8 +497,8 @@ body {
 }
 
 @media (max-width: 600px) {
-    .section__media--large {
-        padding-top: 100px;
+    .section__media {
+        padding-top: 110px;
     }
 
     .section__content {
@@ -557,11 +557,14 @@ body {
         position: absolute;
         background-color: #DDDDDD;
         z-index: 999;
-        padding: 15px;
+        padding-top: 30px;
+        padding-left: 15px;
         /* Чтобы меню было поверх других элементов */
-        max-width: 550px;
-        min-height: 516px;
+        max-width: 530px;
+        min-height: 480px;
         width: 100%;
+        margin-left: -1rem;
+        margin-top: -1rem;
     }
 
     .menu__links {
@@ -610,22 +613,24 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .swiper-slide img {
-        width: 58%;
+        width: 60%;
         object-fit: cover;
     }
 
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
-        right: 140px !important;
+        right: 140px;
         left: auto;
     }
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
-        left: 140px !important;
+        left: 140px;
         right: auto;
     }
 }
