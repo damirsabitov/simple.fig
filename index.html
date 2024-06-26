@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -189,21 +190,37 @@
             </div>
         </section>
         <section class="section section--result">
-            <div class="container swiper-container">
-                <div class="partners swiper-container">
+            <div class="container">
+                <div class="partners">
+                    <a class="partners__link" href="#"><img class="partners__image" src="img/hahne1.svg" alt="img"></a>
+                    <a class="partners__link" href="#"><img class="partners__image" src="img/canson2.svg" alt="img"></a>
+                    <a class="partners__link" href="#"><img class="partners__image" src="img/royal3.svg" alt="img"></a>
+                    <a class="partners__link" href="#"><img class="partners__image" src="img/fabr4.svg" alt="img"></a>
+                </div>
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <a class="partners__link swiper-slide" href="#"><img class="partners__image"
-                                src="img/hahne1.svg" alt="img"></a>
-                        <a class="partners__link swiper-slide" href="#"><img class="partners__image"
-                                src="img/canson2.svg" alt="img"></a>
-                        <a class="partners__link swiper-slide" href="#"><img class="partners__image"
-                                src="img/royal3.svg" alt="img"></a>
-                        <a class="partners__link swiper-slide" href="#"><img class="partners__image" src="img/fabr4.svg"
-                                alt="img"></a>
+                        <div class="swiper-slide"><img src="img/hahne1.svg"></div>
+                        <div class="swiper-slide"><img src="img/canson2.svg"></div>
+                        <div class="swiper-slide"><img src="img/royal3.svg"></div>
+                        <div class="swiper-slide"><img src="img/fabr4.svg"></div>
                     </div>
                 </div>
             </div>
         </section>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
         <section class="section">
             <div class="container">
                 <div class="product">
@@ -243,7 +260,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
