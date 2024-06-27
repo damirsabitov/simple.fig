@@ -319,7 +319,7 @@ body {
     background-color: #4C5866;
 }
 
-.footer__container{
+.footer__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -523,11 +523,6 @@ body {
 
     .container--footer {
         flex-direction: column;
-    }
-
-    .footer__logo {
-        padding-top: 30px;
-        padding-bottom: 10px;
     }
 
     .footer__partners {
