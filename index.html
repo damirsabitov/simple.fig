@@ -21,7 +21,7 @@
         <nav class="nav">
             <div class="container nav__container">
                 <div class="nav__start">
-                    <a href="#" class="nav__logo--link"><img class="logo--link" src="img/logo.svg" alt="logo"></a>
+                    <a href="#" class="nav__link--logo"><img class="nav__image--logo" src="img/logo.svg" alt="logo"></a>
                     <div class="nav__start--poisk">
                         <a class="nav__link" href="#">
                             <li class="nav__li"><img src="img/search.svg" alt="poisk"></li>
@@ -49,10 +49,10 @@
                     </ul>
                 </div>
 
-                <div class="nav__group1">
+                <div class="nav__group">
 
-                <div class="nav__burger">
-                        <a href="#" class="nav__burger--link">
+                    <div class="nav__burger">
+                        <a href="#" class="nav__link--burger">
                             <img src="img/burger.svg" alt="">
                         </a>
                         <div class="menu">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
 
-                <div class="nav__end">
+                    <div class="nav__end">
                         <a class="nav__link" href="#">
                             <li class="nav__li"><img src="img/search.svg" alt="poisk"></li>
                         </a>
@@ -82,7 +82,7 @@
 
     <main class="main">
         <section class="section section--hero">
-            <div class="section__container container" style="overflow: hidden;">
+            <div class="section__container--hero container" style="overflow: hidden;">
                 <div class="section__content">
                     <h1 class="section__title">Простые вещи.<br>Из бумаги</h1>
                     <p class="section__discription">Бума́га (предположительно от итал. bombagia, первоисточником же
@@ -94,48 +94,49 @@
                 <div class="section__media" style=" 
                 max-height: 550px;
                 ">
-                    <img class="section__media--large" src="img/Layer 2 copy.svg" alt="bumaga">
+                    <img class="section__image" src="img/Layer 2 copy.svg" alt="bumaga">
                 </div>
             </div>
         </section>
         <section class="section--result section">
-            <div class="container">
-                <div class="results">
-                    <div class="result result__one">
+            <div class="section__container container">
+                <div class="section__results">
+                    <div class="section__result">
                         <img src="img/result1.svg" alt="result">
                         <h1 class="visually-hidden"></h1>
-                        <div class="result__paragraphs">
-                            <h2 class="result__h2">V.1</h2>
-                            <p class="result__paragraph">Результат вашего обучения</p>
+                        <div class="section__result__paragraphs">
+                            <h2 class="section__result__h2">V.1</h2>
+                            <p class="section__result__paragraph">Результат вашего обучения</p>
                         </div>
                     </div>
-                    <div class="result result__two">
+                    <div class="section__result">
                         <img src="img/result2.svg" alt="result">
-                        <h1 class="visually-hidden"></h1>
-                        <div class="result__paragraphs">
-                            <h2 class="result__h2">V.2</h2>
-                            <p class="result__paragraph">Результат вашего обучения</p>
+                        <h1 class="section__visually-hidden"></h1>
+                        <div class="section__result__paragraphs">
+                            <h2 class="section__result__h2">V.2</h2>
+                            <p class="section__result__paragraph">Результат вашего обучения</p>
                         </div>
                     </div>
-                    <div class="result result__three">
+                    <div class="section__result">
                         <img src="img/result3.svg" alt="result">
                         <h1 class="visually-hidden"></h1>
-                        <div class="result__paragraphs">
-                            <h2 class="result__h2">V.3</h2>
-                            <p class="result__paragraph">Результат вашего обучения</p>
+                        <div class="section__result__paragraphs">
+                            <h2 class="section__result__h2">V.3</h2>
+                            <p class="section__result__paragraph">Результат вашего обучения</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="results__info">
-                    <div class="results__image"><img src="img/box.png" alt="box"></div>
-                    <div class="result__info">
-                        <h1 class="result__h1">Максимальная белизна</h1>
-                        <p class="result__info--paragraph">Для повышения белизны, гладкости и мягкости в состав бумажной
+                <div class="section__results--info">
+                    <div class="section__image--box"><img src="img/box.png" alt="box"></div>
+                    <div class="section__info">
+                        <h1 class="section__h1">Максимальная белизна</h1>
+                        <p class="section__info--paragraph">Для повышения белизны, гладкости и мягкости в состав
+                            бумажной
                             массы вводят белые минеральные
                             вещества: мел, тальк, каолин и др. Эта операция называется наполнением.
                         </p>
-                        <p class="result__info--paragraph">Отлив бумажного листа осуществляют на бумагоделательной
+                        <p class="section__info--paragraph">Отлив бумажного листа осуществляют на бумагоделательной
                             машине, важнейшей частью которой
                             является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.</p>
                     </div>
@@ -144,51 +145,53 @@
             </div>
         </section>
         <section class="section">
-            <div class="container">
-                <div class="catalogs">
-                    <div class="catalog">
-                        <img class="catalog__image" src="img/katalog__1.svg" alt="catalog1">
-                        <h1 class="catalog__h1">Упаковка</h1>
-                        <h2 class="catalog__h2">Тираж: от 50 штук</h2>
-                        <p class="catalog__paragraph">Сделано из крафт-бумаги или плотного картона. Упаковки имеют
+            <div class="section__container">
+                <div class="section__catalogs">
+                    <div class="section__catalog">
+                        <img class="section__catalog--image" src="img/katalog__1.svg" alt="catalog1">
+                        <h1 class="section__catalog--h1">Упаковка</h1>
+                        <h2 class="section__catalog--h2">Тираж: от 50 штук</h2>
+                        <p class="section__catalog--paragraph">Сделано из крафт-бумаги или плотного картона. Упаковки
+                            имеют
                             различные формы и расцветки,
                             изготовим форму под заказ.</p>
-                        <a class="catalog__link" href="#">Подробнее<img class="catalog__link--image"
+                        <a class="section__catalog--link" href="#">Подробнее<img class="section__catalog--arrow"
                                 src="img/arrow1.svg" alt="arrow"></a>
                     </div>
-
-                    <div class="catalog">
-                        <img class="catalog__image" src="img/katalog__2.svg" alt="catalog1">
-                        <h1 class="catalog__h1">Пакеты</h1>
-                        <h2 class="catalog__h2">Тираж: от 200 штук</h2>
-                        <p class="catalog__paragraph">С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
+                    <div class="section__catalog">
+                        <img class="section__catalog--image" src="img/katalog__2.svg" alt="catalog1">
+                        <h1 class="section__catalog--h1">Пакеты</h1>
+                        <h2 class="section__catalog--h2">Тираж: от 200 штук</h2>
+                        <p class="section__catalog--paragraph">С прямоугольным дном. От 10 см до 60 см по высоте.
+                            Материалы:
                             картон, крафт-бумага. Различные расцветки и дизайн.</p>
-                        <a class="catalog__link" href="#">Подробнее<img class="catalog__link--image"
+                        <a class="section__catalog--link" href="#">Подробнее<img class="section__catalog--arrow"
                                 src="img/arrow1.svg" alt="arrow"></a>
                     </div>
-
-                    <div class="catalog">
-                        <img class="catalog__image" src="img/katalog__3.svg" alt="catalog1">
-                        <h1 class="catalog__h1">Кейсы</h1>
-                        <h2 class="catalog__h2">Тираж: от 30 штук</h2>
-                        <p class="catalog__paragraph">Подойдет для документов и других бумаг. Различные расцветки,
+                    <div class="section__catalog">
+                        <img class="section__catalog--image" src="img/katalog__3.svg" alt="catalog1">
+                        <h1 class="section__catalog--h1">Кейсы</h1>
+                        <h2 class="section__catalog--h2">Тираж: от 30 штук</h2>
+                        <p class="section__catalog--paragraph">Подойдет для документов и других бумаг. Различные
+                            расцветки,
                             размеры и плотность. Материал: прессованная бумага.</p>
-                        <a class="catalog__link" href="#">Подробнее<img class="catalog__link--image"
+                        <a class="section__catalog--link" href="#">Подробнее<img class="section__catalog--arrow"
                                 src="img/arrow1.svg" alt="arrow"></a>
-                    </div>
 
-                    <div class="catalog">
-                        <img class="catalog__image" src="img/katalog__4.svg" alt="catalog1">
-                        <h1 class="catalog__h1">Другие изделия </h1>
-                        <h2 class="catalog__h2">Тираж: от 100 штук</h2>
-                        <p class="catalog__paragraph">Нестандартные упаковки, кейсы и другие изделия различных размеров
+
+
+                    </div>
+                    <div class="section__catalog">
+                        <img class="section__catalog--image" src="img/katalog__4.svg" alt="catalog1">
+                        <h1 class="section__catalog--h1">Другие изделия </h1>
+                        <h2 class="section__catalog--h2">Тираж: от 100 штук</h2>
+                        <p class="section__catalog--paragraph">Нестандартные упаковки, кейсы и другие изделия различных
+                            размеров
                             и конфигураций. Изготовим в кратчайшие сроки.</p>
-                        <a class="catalog__link" href="#">Подробнее<img class="catalog__link--image"
+                        <a class="section__catalog--link" href="#">Подробнее<img class="section__catalog--arrow"
                                 src="img/arrow1.svg" alt="arrow"></a>
                     </div>
-
                 </div>
-            </div>
         </section>
         <section class="section section--result">
             <div class="container">

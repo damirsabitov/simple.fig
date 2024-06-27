@@ -70,7 +70,7 @@ body {
     padding-inline: var(--container-padding-inline);
 }
 
-.section__container {
+.section__container--hero {
     display: flex;
     max-height: 620px;
 }
@@ -167,14 +167,14 @@ body {
 
 /* * result */
 
-.results {
+.section__results {
     display: flex;
     gap: 30px;
     padding-top: 90px;
     padding-bottom: 90px;
 }
 
-.result {
+.section__result {
     display: flex;
     align-items: center;
     max-width: 350px;
@@ -184,39 +184,39 @@ body {
     padding-top: 20px;
 }
 
-.result__paragraphs {
+.section__result__paragraphs {
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding-left: 30px;
 }
 
-.result__h2 {
+.section__result__h2 {
     font-size: 18px;
     line-height: 150%;
     color: #666;
 }
 
-.result__paragraph {
+.section__result__paragraph {
     font-size: 18px;
     line-height: 150%;
     color: #85859b;
     font-weight: 400;
 }
 
-.results__info {
+.section__results--info {
     display: flex;
     align-items: center;
     padding-bottom: 90px;
 }
 
-.result__h1 {
+.section__h1 {
     font-size: 40px;
     line-height: 100%;
     color: #666;
 }
 
-.result__info {
+.section__info {
     display: flex;
     max-width: 350px;
     width: 100%;
@@ -224,7 +224,7 @@ body {
     gap: 20px;
 }
 
-.result__info--paragraph {
+.section__info--paragraph {
     font-size: 18px;
     line-height: 170%;
     color: #85859b;
@@ -233,7 +233,7 @@ body {
 
 /* * catalogs */
 
-.catalogs {
+.section__catalogs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -242,30 +242,30 @@ body {
     margin-bottom: 90px;
 }
 
-.catalog {
+.section__catalog {
     max-width: 255px;
 }
 
-.catalog__h1 {
+.section__catalog--h1 {
     padding-top: 20px;
     font-size: 30px;
     color: #666;
 }
 
-.catalog__h2 {
+.section__catalog--h2 {
     padding-top: 8px;
     font-size: 14px;
     color: #b5b5bd;
 }
 
-.catalog__paragraph {
+.section__catalog--paragraph {
     padding-top: 8px;
     font-size: 18px;
     line-height: 170%;
     color: #85859b;
 }
 
-.catalog__link {
+.section__catalog--link {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -355,7 +355,7 @@ body {
 /* * media */
 
 @media (max-width: 900px) {
-    .result {
+    .section__result {
         flex-direction: column;
     }
 
@@ -389,11 +389,11 @@ body {
         padding-top: 90px;
     }
 
-    .results__info {
+    .section__results--info {
         flex-direction: column;
     }
 
-    .result__info {
+    .section__results--info {
         max-width: none;
     }
 
@@ -405,17 +405,17 @@ body {
 }
 
 @media (max-width: 1070px) {
-    .catalogs {
+    .section__catalogs {
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 60px;
         grid-column-gap: 20px;
     }
 
-    .catalog {
+    .section__catalog {
         max-width: 320px;
     }
 
-    .catalog__image {
+    .section__catalog--image {
         max-width: 320px;
         width: 100%;
     }
@@ -430,16 +430,12 @@ body {
         font-size: 16px;
     }
 
-    .result__h1 {
+    .section__h1 {
         font-size: 30px;
     }
 
     .product__h1 {
         font-size: 30px;
-    }
-
-    .section__container {
-        max-height: 470px;
     }
 }
 
@@ -452,27 +448,27 @@ body {
         max-width: 200px;
     }
 
-    .result__h2 {
+    .section__result__h2 {
         font-size: 16px;
     }
 
-    .result__paragraph {
+    .section__result__paragraph {
         font-size: 16px;
     }
 
-    .result__h1 {
+    .section__result__h1 {
         font-size: 24px;
     }
 
-    .result__info--paragraph {
+    .section__result__info--paragraph {
         font-size: 16px;
     }
 
-    .catalog__h1 {
+    .section__catalog--h1 {
         font-size: 24px;
     }
 
-    .catalog__paragraph {
+    .section__catalog--paragraph {
         font-size: 16px;
     }
 
@@ -507,15 +503,15 @@ body {
 }
 
 @media (max-width: 535px) {
-    .section__media--large {
+    .section__image {
         display: none;
     }
 
-    .results {
+    .section__results {
         flex-direction: column;
     }
 
-    .result {
+    .section__result {
         flex-direction: row;
     }
 
@@ -585,7 +581,7 @@ body {
         border-bottom: solid #DDDDDD 1px;
     }
 
-    .nav__group1 {
+    .nav__group {
         display: flex;
         align-items: center;
         padding-top: 15px;
@@ -594,7 +590,7 @@ body {
         justify-content: space-between;
     }
 
-    .catalogs {
+    .section__catalogs {
         grid-template-columns: repeat(1, 1fr);
     }
 
