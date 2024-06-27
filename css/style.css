@@ -525,6 +525,11 @@ body {
         flex-direction: column;
     }
 
+    .footer__logo {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
     .footer__partners {
         border-top: solid #DDDDDD 1px;
         max-width: 290px;
